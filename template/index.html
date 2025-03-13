@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+</head>
+<body>
+    <h1>Word Counter</h1>
+    <form method="post">
+        <textarea name="text" rows="10" cols="30"></textarea><br>
+        <button type="submit">Count Words</button>
+    </form>
+    {% if word_count is not None %}
+        <p>Word Count: {{ word_count }}</p>
+    {% endif %}
+</body>
+</html>
